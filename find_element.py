@@ -14,9 +14,9 @@ class HomePageTests(unittest.TestCase):
         driver.maximize_window() 
     
     #probar buscador
-    #def test_search_text_field_by_name(self):
-    #    search_field=self.driver.find_elements_by_name("buscador")
-    #probar boton VerPlanes
+    def test_search_text_field_by_name(self):
+        search_field=self.driver.find_elements_by_name("buscador")
+        #probar boton VerPlanes
     def test_verplanes_button_enabled(self):
         button=self.driver.find_element_by_class_name("btnPlanes")
     #Validar n° de seguros
